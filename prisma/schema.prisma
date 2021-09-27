@@ -6,3 +6,8 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+model Book {
+  id    Int     @default(autoincrement()) @id
+  title String
+}
